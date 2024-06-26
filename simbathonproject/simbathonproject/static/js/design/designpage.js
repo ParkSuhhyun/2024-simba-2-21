@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const uploadImgButton = document.getElementById('upload-img-button');
     const imageInput = document.getElementById('image-input');
     const refreshButton = document.getElementById('refresh-button');
-    const colorCheckbox = document.getElementById('color-checkbox');
     let currentRotateButton = null;
     let currentResizeButton = null;
     let currentDeleteButton = null;
@@ -335,7 +334,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const topContainer = document.getElementById('top-container');
         topContainer.style.borderTop = 'none';
         topContainer.style.borderBottom = 'none';
-        // topContainer.style.backgroundColor='#FFFFFF'
+        topContainer.style.backgroundColor='#FFFFFF'
+        console.log('ddd')
         hideAllButtons();
         const images = document.querySelectorAll('img');
         const promises = [];
