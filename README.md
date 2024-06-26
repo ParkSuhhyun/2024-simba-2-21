@@ -39,3 +39,8 @@
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=Django&logoColor=white)
+
+## 1. 프로젝트 명
+
+동국대의 모든 과잠을 한번에, 뭐입을과.
+![뭐입을과의 사본](https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/1bede7c0-6b12-4e7b-b765-c86e7f72d91c)
