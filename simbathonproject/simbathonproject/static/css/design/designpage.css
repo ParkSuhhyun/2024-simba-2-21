@@ -112,11 +112,6 @@ p {
     height: 50px;
     border-radius: 15%;
     transition: background-color 0.4s ease;
-
-}
-#check_btn:hover {
-    background-color: #f4e7ff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .title_text {
@@ -138,10 +133,18 @@ p {
 }
 
 #normal_btn{
-    background-color: #FFFFFF;
+    background-color: white;
     border:0;
     /* margin-right: 20px; */
-    width: 60px;
+    width: 30px;
+    height: 30px;
+    zoom: 1.8;
+    border-radius: 15%;
+    transition: color 0.3s ease, background-color 0.3s ease-in-out;
+}
+#normal_btn:hover{
+    background-color: #DFE3F8;
+
 }
 
 #top-container {
@@ -213,7 +216,6 @@ p {
     background-color: white;
     gap: 5px;
     transition: color 0.3s ease, background-color 0.3s ease-in-out;
-
 }
 
 #add-text-button:hover, #upload-img-button:hover, #capture-button:hover, #refresh-button:hover{
