@@ -4,7 +4,7 @@
 <br>
 뭐 입을과
 멋쟁이사자처럼 12기 2&E1
-<br>
+<br/>
 
 # 👋 팀원 소개
 
@@ -49,7 +49,7 @@
 
 ## 1. 프로젝트 명
 
-## "동국대의 모든 과잠을 한번에!" 뭐입을과.
+"동국대의 모든 과잠을 한번에!" 뭐입을과.
 ![뭐입을과의 사본](https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/1bede7c0-6b12-4e7b-b765-c86e7f72d91c)
 
 ## 2. 프로젝트 소개
@@ -58,13 +58,14 @@
 
 ## 3. ✨ 구동 화면
 
-1️⃣ Intro
-<img width="313" alt="readme1" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/4a7e48f9-ef01-4d6e-97b4-9a1603fedba3">
+1️⃣ Intro<br/>
+<img width="400" alt="readme1" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/4a7e48f9-ef01-4d6e-97b4-9a1603fedba3">
 
-2️⃣ 메인 화면
-<img width="308" alt="readme2" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/7edccda1-9f75-4a9c-9a48-623c58a72991">
+2️⃣ 메인 화면<br/>
+<img width="400" alt="readme2" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/7edccda1-9f75-4a9c-9a48-623c58a72991">
 
-3️⃣ 커스텀 화면
-<img width="310" alt="readme3" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/21908c46-d0c1-4e4b-8a2d-7fa390ca8b23">
-<img width="202" alt="readme4" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/6e540835-d583-4c3b-9467-6a5d5755a285">
+3️⃣ 커스텀 화면<br/>
+<img width="400" alt="readme3" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/21908c46-d0c1-4e4b-8a2d-7fa390ca8b23">
+<br/>
+<img width="400" alt="readme4" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/6e540835-d583-4c3b-9467-6a5d5755a285">
 
