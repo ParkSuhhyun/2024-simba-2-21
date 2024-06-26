@@ -126,6 +126,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('filter_btn').addEventListener('click', function() {
         window.location.href = '/customfilter';
+
+    //filte_count정의 후 슬라이더 유무 결정
+    var filteredCount = parseInt(document.getElementById('filtered-count').getAttribute('data-count'), 10);
+    console.log(filteredCount);
+
+    if (filteredCount < 2) {
+    document.querySelectorAll('.slider__btn').forEach(function(btn) {
+        btn.style.visibility = 'hidden';
+    });
+} else {
+    document.querySelectorAll('.slider__btn').forEach(function(btn) {
+        btn.style.visibility = 'visible';}
+    )}
     });
 });
 
@@ -163,6 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log('Suggestions:', data); // 서버에서 반환된 데이터 확인
                     suggestionsList.innerHTML = '';
 
+                    const addedItems = []; // 추가된 이름을 저장하는 배열
+
                     data.forEach(item => {
                         const titleMatch = item.title.toLowerCase().includes(query);
                         const majorMatch = item.major.toLowerCase().includes(query);
@@ -182,11 +197,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         } else {
                             return; // 일치하는 항목이 없으면 넘어가기
                         }
-
+                        if (addedItems.includes(liContent)) {
+                            return; // 이미 추가된 이름이면 넘어가기
+                        }
+                    
+                        addedItems.push(liContent);
+                        
                         const li = document.createElement('li');
                         li.innerHTML = liContent;
                         li.addEventListener('click', function() {
-                            searchInput.value = item.title; // 검색창에 제목만 채우기
+                            searchInput.value = liContent; 
                             suggestionsContainer.style.display = 'none';
                             document.getElementById('search_form').submit(); // 검색 폼 제출
                         });
@@ -196,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (data.length > 0) {
                         suggestionsContainer.style.display = 'block';
                         searchInput.style.borderRadius = '20px 20px 0px 0px';
-                        searchInput.style.boxShadow = '5px 5px gray';
+                        searchInput.style.boxShadow='0px 7px 29px 0px rgba(100, 100, 111, 0.2';
                     } else {
                         suggestionsContainer.style.display = 'none';
                         searchInput.style.borderRadius = '20px';
@@ -210,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 searchInput.style.boxShadow = 'none';
             } else {
                 searchInput.style.borderRadius = '20px 20px 20px 20px';
-                searchInput.style.boxShadow = '5px 5px gray';
+                searchInput.style.boxShadow='0px 7px 29px 0px rgba(100, 100, 111, 0.2';
             }
         }
     });
@@ -229,3 +249,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 }); 
 
+///페이지 이동간 필터 초기화 ///
+document.getElementById("normal_btn").addEventListener('click', function() {
+    const selectedDepartments = [];
+
+    // 로컬 스토리지에 저장
+    localStorage.setItem('selectedDepartments', JSON.stringify(selectedDepartments));
+})

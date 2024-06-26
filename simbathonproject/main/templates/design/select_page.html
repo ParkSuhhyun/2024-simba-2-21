@@ -10,33 +10,47 @@
 
 <body>
     <div id="body_container">
+        <div class="head_bar">
+            <div class="seq">색상 선택하기</div>
+            <div class="seq">디자인 만들기</div>
+            <div class="seq">업로드 하기</div>
+        </div>
         <div id='top_bar'>
-            <p id='design_text'>과잠 색상 선택</p>
+            <div id="back_btn">         <!-- 뒤로가기 -->
+                <a href='/main/'><img src="{% static 'assets/icons/icon_back.png' %}"></a>
+            </div>
+            <div class="title_text">    <!-- 타이틀 택스트 -->
+                <p id='design_text'>과잠 색상 선택</p>
+            </div>
+            <div class="nothing">  </div>
         </div>
-        <div id='template_container'>
-            <div class='template_item'>
-                <img src="{% static 'assets/gray.png' %}" data-keyword="회색"/>
+
+        <div class="body_box">
+            <div id='template_container'>
+                <div class='template_item'>
+                    <img src="{% static 'assets/gray.png' %}" data-keyword="회색"/>
+                </div>
+                <div class='template_item'>
+                    <img src="{% static 'assets/purple.png' %}" data-keyword="보라색"/>
+                </div>
+                <div class='template_item'>
+                    <img src="{% static 'assets/orange.png' %}" data-keyword="주황색"/>
+                </div>
+                <div class='template_item'>
+                    <img src="{% static 'assets/red.png' %}" data-keyword="빨간색"/>
+                </div>
+                <div class='template_item'>
+                    <img src="{% static 'assets/blue.png' %}" data-keyword="파란색"/>
+                </div>
+                <div class='template_item'>
+                    <img src="{% static 'assets/charcol.png' %}" data-keyword="차콜색"/>
+                </div>
             </div>
-            <div class='template_item'>
-                <img src="{% static 'assets/purple.png' %}" data-keyword="보라색"/>
+            <div id='select_btn_container'>
+                <button id='select_btn'>선택 완료</button>
             </div>
-            <div class='template_item'>
-                <img src="{% static 'assets/orange.png' %}" data-keyword="주황색"/>
-            </div>
-            <div class='template_item'>
-                <img src="{% static 'assets/red.png' %}" data-keyword="빨간색"/>
-            </div>
-            <div class='template_item'>
-                <img src="{% static 'assets/blue.png' %}" data-keyword="파란색"/>
-            </div>
-            <div class='template_item'>
-                <img src="{% static 'assets/charcol.png' %}" data-keyword="차콜색"/>
-            </div>
-            
         </div>
-        <div id='select_btn_container'>
-            <button id='select_btn'>선택 완료</button>
-        </div>
+        
     </div>
 
     <script>   
@@ -48,7 +62,8 @@
             images.forEach((img) => {
                 img.addEventListener('click', () => {
                     if (selectedImage) {
-                        selectedImage.style.border = '2px solid black';
+                        //selectedImage.style.border = '2px solid black';
+                        selectedImage.style.border = 'none';
                         selectedImage.style.borderRadius = '10px';
                     }
 
@@ -59,7 +74,6 @@
                     const keyword = img.getAttribute('data-keyword'); // data-keyword 속성 값 가져오기
                     localStorage.setItem('selectedImage', img.src); // img 요소의 src 저장
                     localStorage.setItem('selectedKeyword', keyword); // 키워드 값 저장
-                    console.log('키워드 저장됨:', keyword); // 키워드 저장 확인
                 });
             });
 
