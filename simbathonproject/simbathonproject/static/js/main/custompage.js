@@ -1,5 +1,6 @@
 //////////// main - custom 공통부분 /////////
 // 1. 슬라이더 기능
+
 document.addEventListener('DOMContentLoaded', () => {
     const sliderWrap = document.querySelector('.slider__wrap');
     const sliderImg = sliderWrap.querySelector('.slider__img');
@@ -126,22 +127,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('filter_btn').addEventListener('click', function() {
         window.location.href = '/customfilter';
 
-    //filte_count정의 후 슬라이더 유무 결정
-    var filteredCount = parseInt(document.getElementById('filtered-count').getAttribute('data-count'), 10);
-
-    if (filteredCount < 2) {
-    document.querySelectorAll('.slider__btn').forEach(function(btn) {
-        btn.style.visibility = 'hidden';
-    });
-} else {
-    document.querySelectorAll('.slider__btn').forEach(function(btn) {
-        btn.style.visibility = 'visible';}
-    )}
     });
 });
 
-///////////    초기화 버튼    /////////
-document.getElementById('reset_btn').addEventListener('click', function() {
+    ///////////    초기화 버튼    /////////
+    document.getElementById('reset_btn').addEventListener('click', function() {
     //selectedDepartments 초기화
     const selectedDepartments = [];
 
@@ -151,7 +141,6 @@ document.getElementById('reset_btn').addEventListener('click', function() {
     //새로고침 시행
     location.reload();
 })
-
 
 
 
@@ -249,3 +238,29 @@ document.getElementById("normal_btn").addEventListener('click', function() {
     // 로컬 스토리지에 저장
     localStorage.setItem('selectedDepartments', JSON.stringify(selectedDepartments));
 })
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+ //filte_count정의 후 슬라이더 유무 결정
+ var filteredCount = parseInt(document.getElementById('filtered-count').attributes[1].value);
+ console.log(filteredCount)
+
+ // 슬라이더 버튼의 가시성 설정
+ var sliderButtons = document.querySelectorAll('.slider__btn');
+ if (sliderButtons.length === 0) {
+     console.error("No elements with class 'slider__btn' found");
+     return;
+ }
+
+ if (filteredCount < 2) {
+ document.querySelectorAll('.slider__btn').forEach(function(btn) {
+     btn.style.visibility = 'hidden';
+ });
+ } else {
+ document.querySelectorAll('.slider__btn').forEach(function(btn) {
+     btn.style.visibility = 'visible';}
+ )}
+
+});
