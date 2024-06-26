@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const uploadImgButton = document.getElementById('upload-img-button');
     const imageInput = document.getElementById('image-input');
     const refreshButton = document.getElementById('refresh-button');
-    const colorCheckbox = document.getElementById('color-checkbox');
     let currentRotateButton = null;
     let currentResizeButton = null;
     let currentDeleteButton = null;
