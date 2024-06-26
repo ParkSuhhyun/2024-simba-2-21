@@ -9,6 +9,17 @@ body{
     margin: 0;
     height: 100vh;
 }
+.college_label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 320px;
+    padding: 0 0 5px 15px;
+    margin-top: 10px;
+    font-family: 'ScoreDream';
+    font-weight: 500;
+    font-size: 17px;
+}
 
 .head_bar {
     /* border: 1px solid blue; */
@@ -105,7 +116,8 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 10px 0px 7px 0px; 
+    
 }
     
 #imageInput {
@@ -122,11 +134,13 @@ form{
 #xx{
     margin-top: 10px;
 }
+
 label{
     font-size: 22px;
-    color: rgba(120, 120, 120, 1);
+    color: #787878;
     display: flex;
     margin-top: 10px;
+    opacity: 80%;
 }
 
 label + select {
