@@ -163,7 +163,7 @@ a {
     zoom: 0.09;
     background-color: none;
     border-radius: 20%;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.4s ease, background-color 0.4s ease;
 }
 
 #filter_btn > img:hover {
@@ -409,6 +409,31 @@ li:hover{
     height: 430px;
     margin: 0px 45px 0px 45px;
     object-fit: contain;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.test_img.flip {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.03);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 바운스 효과를 적용하는 클래스 */
+.test_img.bounce {
+    animation: bounceIn 0.6s ease-in-out;
 }
 
 .slider__btn > a {
@@ -425,6 +450,8 @@ li:hover{
     z-index: 10;
     border-radius: 50%;
     font-weight: bold;
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
 }
 
 .slider__btn > a:hover {
@@ -469,6 +496,7 @@ p{
     font-size: 18px;
     color: gray;
     margin-top: 15px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 

@@ -96,16 +96,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 이미지 앞뒤 전환
 function toggleImage(img) {
+    // 현재 이미지의 src 속성 값과 data-front 및 data-back 속성 값을 가져옵니다.
     var frontSrc = img.getAttribute('data-front');
     var backSrc = img.getAttribute('data-back');
-    if (img.src.endsWith(frontSrc.split('/').pop())) {
-        img.src = backSrc;
-        img.setAttribute('data-show', 'back');
-    } else {
-        img.src = frontSrc;
-        img.setAttribute('data-show', 'front');
-    }
+    var currentSrc = img.src.endsWith(frontSrc.split('/').pop()) ? frontSrc : backSrc;
+
+    // 전환 효과를 트리거하기 위해 flip 클래스를 추가합니다.
+    img.classList.add('flip');
+
+    // 0.3초 후 이미지를 바꾸고 flip 클래스를 제거한 후 bounce 클래스를 추가합니다.
+    setTimeout(function() {
+        if (currentSrc === frontSrc) {
+            img.src = backSrc;
+            img.setAttribute('data-show', 'back');
+        } else {
+            img.src = frontSrc;
+            img.setAttribute('data-show', 'front');
+        }
+
+        // flip 클래스를 제거하고 바운스 효과를 위해 bounce 클래스를 추가합니다.
+        img.classList.remove('flip');
+        img.classList.add('bounce');
+
+        // 바운스 효과가 끝난 후 bounce 클래스를 제거합니다.
+        setTimeout(function() {
+            img.classList.remove('bounce');
+        }, 400); // 바운스 애니메이션 시간과 동일
+    }, 200); // CSS transition 시간의 절반을 사용하여 전환을 부드럽게 만듭니다.
 }
+
 
 // '뒷판부터 보기' 버튼 기능 추가
 document.addEventListener('DOMContentLoaded', function() {
