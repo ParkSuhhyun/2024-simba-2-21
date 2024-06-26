@@ -84,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else {
                         iconHeart.src = "/static/assets/icons/heart.png";
                     }
-                    console.log(`Total likes: ${data.like_count}`);
                 }
             });
         });
@@ -129,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //filte_count정의 후 슬라이더 유무 결정
     var filteredCount = parseInt(document.getElementById('filtered-count').getAttribute('data-count'), 10);
-    console.log(filteredCount);
 
     if (filteredCount < 2) {
     document.querySelectorAll('.slider__btn').forEach(function(btn) {
@@ -146,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('reset_btn').addEventListener('click', function() {
     //selectedDepartments 초기화
     const selectedDepartments = [];
-    console.log(selectedDepartments);
 
     // 로컬 스토리지에 저장
     localStorage.setItem('selectedDepartments', JSON.stringify(selectedDepartments));
@@ -159,9 +156,6 @@ document.getElementById('reset_btn').addEventListener('click', function() {
 
 
 ///4. 검색기능///
-// total_customs 값을 콘솔에 출력하여 확인
-console.log("템플릿에서 전달된 total_customs: {{ total_customs }}");
-
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search_input');
     const suggestionsContainer = document.getElementById('suggestions');
@@ -173,7 +167,6 @@ document.addEventListener('DOMContentLoaded', () => {
             fetch(`/custom/suggestions/?q=${query}`)
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Suggestions:', data); // 서버에서 반환된 데이터 확인
                     suggestionsList.innerHTML = '';
 
                     data.forEach(item => {

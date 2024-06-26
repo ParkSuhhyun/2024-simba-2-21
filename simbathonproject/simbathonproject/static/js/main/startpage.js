@@ -32,8 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('.slider__inner 요소를 찾을 수 없습니다.');
         }
     }, 2100);
-    console.log(document.querySelector('.slider__inner')); // null이면 요소가 존재하지 않음
-    console.log(document.querySelector('.slider__btn_container')); // null이면 요소가 존재하지 않음
 
     // Function to update slider position and dots
     function updateSlider() {
