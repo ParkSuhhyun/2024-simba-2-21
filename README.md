@@ -1,8 +1,9 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:b972e9,100:d9a7fb&height=180&text=Welcome%20to%202NE1!&animation=fadeIn&fontColor=000000&fontSize=60" />
 </div>
-뭐 입을과
-멋쟁이사자처럼 12기 2&E1
+
+# 뭐 입을과
+멋쟁이사자처럼 12기 2&E1 레포지토리입니다.
 
 # 👋 팀원 소개
 
@@ -26,16 +27,42 @@
 | [김지우](https://github.com/ryann1203)    | 컴퓨터공학전공 | 22학번 | 2022110421@dgu.ac.kr |
 | [박서현](https://github.com/ParkSuhhyun)  | 경영정보학과   | 22학번 | psh8500000@gmail.com |
 
-## 🛠️ Tech Stacks
+# 🛠️ Tech Stacks
 
+## FrontEnd
+![HTML](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
+![CSS](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Javascript](https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
+
+## BackEnd
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=Django&logoColor=white)
+
+## 협업 툴
 ![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white)
 ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white)
 ![Github](https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
-![HTML](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
-![CSS](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Javascript](https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=Django&logoColor=white)
+
+## 1. 동국대의 모든 과잠을 한번에! 뭐입을과.
+![뭐입을과의 사본](https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/1bede7c0-6b12-4e7b-b765-c86e7f72d91c)
+
+## 2. 프로젝트 소개
+
+> '뭐입을과' 서비스의 주요 기능으로는 동국대학교의 모든 학과의 과잠을 한눈에 볼 수 있으며, 원하는 디자인을 쉽게 찾을 수 있도록 합니다. 텍스트, 이미지 등을 활용하여 자신만의 과잠 디자인을 만들 수 있으며 학생회나 디자인 전문가가 아니더라도 누구나 쉽게 자신만의 독창적인 과잠을 제작할 수 있다는 특징이 있습니다.
+
+## 3. ✨ 구동 화면
+
+1️⃣ Intro<br/>
+<img width="420" alt="readme1" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/4a7e48f9-ef01-4d6e-97b4-9a1603fedba3">
+
+2️⃣ 메인 화면<br/>
+<img width="420" alt="readme2" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/7edccda1-9f75-4a9c-9a48-623c58a72991">
+
+3️⃣ 커스텀 화면<br/>
+<img width="420" alt="readme3" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/21908c46-d0c1-4e4b-8a2d-7fa390ca8b23">
+<br/>
+<img width="350" alt="readme4" src="https://github.com/LikeLion-at-DGU/2024-simba-2-21/assets/130066603/6e540835-d583-4c3b-9467-6a5d5755a285">
+
